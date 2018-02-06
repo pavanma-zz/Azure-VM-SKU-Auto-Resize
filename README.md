@@ -48,4 +48,4 @@ This self-help PowerShell tool enables businesses to configure/schedule VM Auto 
 [2] Querying memory usage is not available natively from Azure fabric unless diagnostics are enabled to monitor memory counters.  Customer can choose to select/unselect memory parameter while configuring ‘auto-resize’ for the VMs.
 
 ## How to use
-https://github.com/pavanma/Azure-VM-SKU-Auto-Resize/blob/master/script-output.png
+![Output](./script-output.png)
