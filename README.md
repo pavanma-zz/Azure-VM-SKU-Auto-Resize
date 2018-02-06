@@ -9,6 +9,8 @@ As part of Azure cost optimization, it’s best to right size VM SKU based on it
 -	Creation of Webhooks to trigger Runbooks
 -	Creation of Azure alert on the VM
 
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/vertical-scaling-automation
+
 ## Tool features
 
 This self-help PowerShell tool enables businesses to configure/schedule VM Auto Resizing based on CPU/Memory* usage/Disk count.
