@@ -30,14 +30,14 @@ This self-help PowerShell tool enables businesses to configure/schedule VM Auto 
 2)	Onboard multiple VMs from a subscription in one go
 3)	Onboarding time is about a minute per VM
 4)	Just input the below parameters to the tool: 
-	 Names of the VMs
-	 Name of the Sub
-	 Automation Account Name
-	 Email address
-	 Optional parameters: 
-      •	Thresholds (Upper and Lower CPU values to trigger Upsize/Downsize respectively e.g., 10% and 60%)
-      •	Duration to monitor before triggering resize (e.g., last 12Hrs)
-      • Monitor memory flag (for flipping between CPUs without reducing memory allotment)
+      - Names of the VMs
+      - Name of the Sub
+      - Automation Account Name
+      - Email address
+      - Optional parameters: 
+        - Thresholds (Upper and Lower CPU values to trigger Upsize/Downsize respectively e.g., 10% and 60%)
+        - Duration to monitor before triggering resize (e.g., last 12Hrs)
+        - Monitor memory flag (for flipping between CPUs without reducing memory allotment)
 
 ## Constraints
 
