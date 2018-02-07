@@ -16,10 +16,10 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/windows/vertical-scaling
 This self-help PowerShell tool enables businesses to configure/schedule VM Auto Resizing based on CPU/Memory* usage/Disk count.
 
 ### Functionality: 
-1)	Monitor CPU and memory[1] (optional) usage and resize (downsize/upsize) VM SKU automatically.  E.g., CPU <10% for 12Hrs, downsize SKU by one. 
-	By default, resizes only based on CPU usage – e.g., from DS14 to DS13… DS1.  This is ideal for non-prod servers and most of production unless memory is a concern.
-	Considering memory usage is not straight forward as it requires enabling diagnostics and enable memory counters.  Without enabling diagnostics and memory counters, to help with memory intensive apps, downsize/upsize to lower SKUs but with same memory.  This is ideal for prod servers incase memory is a concern. 
-•	E.g, if SKU is DS4 (8cores, 28GB), downsize to only DS13 (4cores, 28GB) where memory is same.  For all downsize/upsize requirements, it flips between only these 2 CPUs.  This is still 35% cost effective (from DS4 to DS13).
+1)	Monitor CPU and memory[1] (optional) usage and resize (downsize/upsize) VM SKU automatically.  E.g., CPU <10% for 12Hrs, downsize SKU by one.
+- By default, resizes only based on CPU usage – e.g., from DS14 to DS13… DS1.  This is ideal for non-prod servers and most of production unless memory is a concern.
+- Considering memory usage is not straight forward as it requires enabling diagnostics and enable memory counters.  Without enabling diagnostics and memory counters, to help with memory intensive apps, downsize/upsize to lower SKUs but with same memory.  This is ideal for prod servers incase memory is a concern. 
+  - E.g, if SKU is DS4 (8cores, 28GB), downsize to only DS13 (4cores, 28GB) where memory is same.  For all downsize/upsize requirements, it flips between only these 2 CPUs.  This is still 35% cost effective (from DS4 to DS13).
 
 [1] Monitoring memory counters is not available natively in Azure fabric unless diagnostics are enabled and memory counters are monitored and data is written to storage accounts.  To circumvent scenarios where downsizing to lower memory SKUs, is not acceptable, flip only between CPUs with same memory (DS4 (8cores,28GB) <-> DS13 (4cores,28GB)).
 
